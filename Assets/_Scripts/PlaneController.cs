@@ -20,13 +20,6 @@ public class PlaneController : MonoBehaviour
     void FixedUpdate()
     {
         rotation += new Vector3(-Input.GetAxis("Vertical"), 0, Input.GetAxis("Horizontal"));
-        if (Input.GetKey(KeyCode.Space))
-        {
-            // accelerating
-            velocity += -transform.forward * Time.deltaTime * ACCEL_SCALE;
-            // Debug.Log(.forward);
-        }
-        velocity -= Vector3.Normalize(velocity) * Time.deltaTime * DRAG_SCALE;
 
         transform.position += velocity * Time.deltaTime;
         transform.Rotate(new Vector3(-Input.GetAxis("Vertical"), 0, Input.GetAxis("Horizontal")));
