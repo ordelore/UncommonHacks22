@@ -57,11 +57,11 @@ public class UDPReceive: MonoBehaviour {
 	private void init() {
 		
 		xPos = 0;
-       yPos = 0;
-       zPos = 0;
-       pitch = 0;
-       yaw = 0;
-       roll = 0;
+    yPos = 0;
+    zPos = 0;
+    pitch = 0;
+    yaw = 0;
+    roll = 0;
 		
 		
 		print("UDPSend.init()");
@@ -96,30 +96,29 @@ public class UDPReceive: MonoBehaviour {
 					var j = i+1;
 						switch (j)
 						{
-						     case 1: {
-								xPos = (float)datum;
-						        break;
+						    case 1: {
+								  xPos = (float)datum;
+						      break;
 						    } case 2: {
-											pitch = (float)datum;	
-
-						        break;
+									yPos = (float)datum;	
+						      break;
 						    } case 3: {
-								zPos = (float)datum;
-								break;
-						    }case 4: {
-								yaw = (float)datum;
-
-						        break;
+								  zPos = (float)datum;
+								  break;
+						    } case 4: {
+								  yaw = (float)datum;
+						      break;
 						    } case 5: {
-										yPos = (float)datum;		//		
-						
-						        break;
+									pitch = (float)datum;
+						      break;
 						    } case 6: {
-							roll = (float)datum;
-								break;
+							    roll = (float)datum;
+								  break;
 						    }
 						}
 				}
+
+        Debug.Log("xPos: " + xPos + " yPos: " + yPos + " zPos: " + zPos + " pitch: " + pitch + " yaw: " + yaw + " roll: " + roll);
 				
 				// ....
 				// allReceivedUDPPackets=allReceivedUDPPackets+text;
