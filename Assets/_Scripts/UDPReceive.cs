@@ -118,7 +118,7 @@ public class UDPReceive: MonoBehaviour {
 						}
 				}
 
-        Debug.Log("xPos: " + xPos + " yPos: " + yPos + " zPos: " + zPos + " pitch: " + pitch + " yaw: " + yaw + " roll: " + roll);
+        //Debug.Log("xPos: " + xPos + " yPos: " + yPos + " zPos: " + zPos + " pitch: " + pitch + " yaw: " + yaw + " roll: " + roll);
 				
 				// ....
 				// allReceivedUDPPackets=allReceivedUDPPackets+text;
