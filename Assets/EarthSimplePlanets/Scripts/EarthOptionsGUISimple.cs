@@ -22,7 +22,7 @@ public class EarthOptionsGUISimple : MonoBehaviour {
 
 	void Update()
 	{
-		transform.Rotate(new Vector3(0, Time.deltaTime * earthRotationSpeed, 0));
+		transform.Rotate(new Vector3(0, -Time.deltaTime * earthRotationSpeed, 0));
 
 		if ((int)cloudType != (int)currentSelectedCloud) {
 			var selectedCloudMaterial = generalUIScript.cloudMaterials[(int)cloudType];	
