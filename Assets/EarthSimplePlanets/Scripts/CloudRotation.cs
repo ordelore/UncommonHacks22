@@ -13,7 +13,7 @@ public class CloudRotation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		transform.Rotate(Vector3.up * Time.deltaTime * planetSpeedRotation);
+		transform.Rotate(-1 * Vector3.up * Time.deltaTime * planetSpeedRotation);
 
 
 	}
