@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public CameraPositions cameraPositions;
+    public CameraPositions camPositions;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // We want to switch the camera position
-            cameraPositions.NextPosition();
+            camPositions.NextPosition();
         }
     }
 }

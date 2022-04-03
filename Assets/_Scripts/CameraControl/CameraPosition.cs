@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraPosition : MonoBehaviour
 {
+
+    public GameObject projectionScreen;
     // Start is called before the first frame update
     void Start()
     {

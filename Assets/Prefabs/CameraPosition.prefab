@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2443954385010508482}
   m_Layer: 0
   m_Name: ViewPlane
-  m_TagString: Untagged
+  m_TagString: ViewPlane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -524,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f5054180e660a49819737e685105aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectionScreen: {fileID: 4735683199470875663}
 --- !u!1 &6087080197539051544
 GameObject:
   m_ObjectHideFlags: 0
