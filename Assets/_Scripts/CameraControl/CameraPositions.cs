@@ -62,12 +62,12 @@ public class CameraPositions : MonoBehaviour
         Debug.Log("Original Pos: Offx: " + Offx + " Offy: " + Offy + " Offz: " + Offz);
         //viewPlane.transform.eulerAngles.x
         Quaternion eulerRotation = Quaternion.Euler(0, viewPlane.transform.eulerAngles.y, viewPlane.transform.eulerAngles.z);
-        Vector3 cameraOffest = new Vector3(0, 0, 0);
+        Vector3 cameraOffest = new Vector3(0, 0, -6);
         cameraOffest = eulerRotation * cameraOffest;
         Debug.Log(cameraOffest);
         headtrack.OffsetX += cameraOffest.x;
         headtrack.OffsetY += cameraOffest.y;
-        headtrack.OffsetX += cameraOffest.z;
+        headtrack.OffsetZ += cameraOffest.z;
         Debug.Log(cameraOffest);
 
 
